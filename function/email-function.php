@@ -61,4 +61,5 @@ function sendEmail($recipientEmail) {
         }
     }
 }
+
 ?>

@@ -12,8 +12,18 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.10/dist/sweetalert2.min.js"></script>
 </head>
 <body>
+    <div class="loader">
+        <div class="loader-background"></div>
+        <div class="loader-text">
+            <h5><span id="typing"></h5>
+        </div>
+    </div>
+    <section id="up"></section>
+    <section id="down"></section>
+    <section id="left"></section>
+    <section id="right"></section>
     <header class="header">
-        <a href="#home" class="logo">LAMB.</a>
+        <a href="#home" class="logo">lamb.</a>
         <i class='bx bx-menu' id="menu-icon"></i>
         <nav class="navbar" >
             <a href="#home" class="active">HOME</a>
@@ -26,7 +36,7 @@
     <section class="home" id="home">
         <div class="home-content">
             <h3>Hello, I'm</h3>
-            <h1>Lloyd Anthony</h1>
+            <h1>Lloyd Bautista</h1>
             <h3>And I'm an aspiring <span class="multiple-entry"></span></h3>
             <p>I am currently seeking for a position in a company where I can leverage my skills and expertise in the field of IT and contribute to a company that provides an opportunity for both personal and career growth.
         </p>
@@ -43,19 +53,24 @@
         </div>
         </div>
         <div class="home-img">
-            <img src="../assets/lloyd.webp" alt="">
+            <img src="../assets/Remote Working (HD).png" alt="">
         </div>
     </section>
 
     <section class="about" id="about">
         <div class="about-img">
             <img src="../assets/lloyd1.webp" alt="">
+            <div class="overlay-text">#Class of 2023 🎉</div>
         </div>
         <div class="about-content">
             <h2 class="heading">About <span>Me</span></h2>
             <h3>I'm a graduate of <span> Bachelor of Science in Information Technology</span></h3>
             <h3><span>Major in Business Analytics</span></h3>
-            <p>In my specialization, we are taught how to transform data into a valuable insight that could be useful for data visualization and decision making. I had my internship at <span>Digital Transformation Center</span> located at STEER Hub inside Batangas State University Alangilan Campus. I work as a <span>Back-end Developer</span> there. </p>
+            <p>In my specialization, we are taught how to transform data into a valuable insight that could be useful for data visualization and decision making. 
+                I have a strong interest when it comes to technology and I enjoy in diving into the world of code and creating solutions.
+                 I had the oppurtunity to be an intern at <span>Digital Transformation Center</span> located at STEER Hub inside 
+                 Batangas State University Alangilan Campus where I served as a <span>backend developer</span>.
+             This experience allowed me to apply and further develop my skills in real-world scenarios </p>
         </div>
     </section>
 
@@ -66,7 +81,7 @@
                 <i class='bx bx-code-block'></i>
                 <h3>Web Development</h3>
                 <p>
-                    I have a proficient knowledge with web development technologies like PHP, HTML, JavaScript, and CSS. 
+                    I'm knowledgeable with web development technologies like PHP, HTML, JavaScript, and CSS. 
                     Additionally, I'm familiar with both MySQL and PostgreSQL for database management. 
                 </p>
                 <div class="app-container">
@@ -97,13 +112,14 @@
                 <h3>Other Technologies</h3>
                 <p>
                     I also possess basic knowledge of Python (including Django REST API, Numpy, Matplotlib, Pandas), 
-                    GIT Version Control System, Power BI, and Microsoft Office Suites.
+                    GIT Version Control System, Power BI, Figma(UI/UX)  and Microsoft Office Suites.
                 </p>
                 <div class="app-container">
                     <img src="https://cdn-icons-png.flaticon.com/128/5968/5968350.png?ga=GA1.1.1091421505.1676426509&track=ais" alt="">
                     <img src="https://cdn-icons-png.flaticon.com/128/10055/10055317.png?ga=GA1.1.1091421505.1676426509&track=ais" alt="">
                     <img src="https://cdn-icons-png.flaticon.com/128/732/732220.png?ga=GA1.1.1091421505.1676426509&track=ais" alt="">
                     <img src="https://cdn-icons-png.flaticon.com/128/888/888883.png?ga=GA1.1.1091421505.1676426509&track=ais" alt="">
+                    <img src="https://cdn-icons-png.flaticon.com/128/5968/5968705.png" alt="">
                 </div>
                 <a href="https://www.freepik.com/" class="attr-link">Icons from Freepik</a>
             </div>
@@ -131,7 +147,7 @@
                     <h4>ATLANTIS</h4>
                     <p>
                         ATLANTIS: An IoT-Based Artificial Intelligence Aquaponic Control and Monitoring System for Aquaponics Greenhouse
-                         is a DOST funded project to check the current status of the aquaponics between mobile phone and edge device attached to a greenhouse
+                         is a DOST funded project to check the current status of the aquaponics between mobile phone and edge device attached to a greenhouse.
                     </p>
                     <a href=""><i class='bx bx-link-alt' ></i></a>
                 </div>
@@ -143,7 +159,7 @@
                     <h4>AIDukasyon: An Educational Assistance Web Portal </h4>
                     <p>
                         AIDukasyon is a web system intended for the Local Government Unit of Alitagtag 
-                        to serve the application process for the educational assistance program of the LGU-Alitagtag
+                        to serve the application process for the educational assistance program of the LGU-Alitagtag.
                     </p>
                     <a href="https://alitagtag.aidukasyon.online/public/home.php"><i class='bx bx-link-alt' ></i></a>
                 </div>
@@ -153,7 +169,7 @@
                 <img src="../assets/blbdc.webp" alt="">
                 <div class="portfolio-layer">
                     <h4>Business Logo</h4>
-                    <p>I created the business logo and marketing infographics to small business owner of Brielle's Lechon Belly De Cebu</p>
+                    <p>I created the business logo and marketing infographics to small business owner of Brielle's Lechon Belly De Cebu.</p>
                     <a href="https://web.facebook.com/profile.php?id=100086812871111"><i class='bx bx-link-alt' ></i></a>
                 </div>
             </div>
@@ -163,8 +179,8 @@
     require_once('../function/email-function.php');
 
     if (isset($_POST['submit'])) {
-        $recipientEmail = 'lloydanthony.bautista0@gmail.com'; // Replace with the recipient's email address
-        sendEmail($recipientEmail); // Call the sendEmail function from email-function.php
+        $recipientEmail = 'lloydanthony.bautista0@gmail.com'; // recipient's email address
+        sendEmail($recipientEmail); // call the sendEmail function from email-function.php
     }
     ?>
 
@@ -186,7 +202,10 @@
 
     <footer class="footer">
         <div class="footer-text">
-            <p>Made by LAMB | 2023</p>
+            <p>© L.A.M.B. | 2023 | All Rights Reserved</p>
+        </div>
+        <div class="pixcap-attr" id="#pixcap">
+        <p><a href="https://www.pixcap.com">3d icon made with pixcap.com</a></p>
         </div>
         <div class="footer-icon-top">
             <a href="#home"><i class='bx bx-up-arrow' ></i></a>

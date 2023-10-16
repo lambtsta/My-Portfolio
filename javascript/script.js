@@ -43,7 +43,7 @@ ScrollReveal().reveal('.about-content, .services-container, .portfolio-container
 /*type js*/
 
 const type = new Typed('.multiple-entry',{
-    strings: ['Web Developer', 'Data Analyst'],
+    strings: ['Web Developer'],
     typeSpeed:100,
     backspeed: 100,
     backDelay: 1000,
@@ -71,10 +71,30 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+/** */
+document.addEventListener("DOMContentLoaded", function () {
+    const loader = document.querySelector(".loader");
 
+    // Initialize Typed.js for the typing animation
+    const type = new Typed('#typing', {
+        strings: ['lamb.'],
+        typeSpeed: 100,
+        backSpeed: 100,
+        backDelay: 1000,
+        onComplete: function () {
+            // Hide the loader when typing animation is complete
+            setTimeout(() => {
+                loader.classList.add("hidden");
+            }, 1000); // Adjust the delay as needed
+        },
+    });
 
-
-
+    // Blinking cursor animation
+    const cursor = document.querySelector('#cursor');
+    setInterval(() => {
+        cursor.style.visibility = (cursor.style.visibility === 'hidden') ? 'visible' : 'hidden';
+    }, 1000); // Adjust the blinking speed (500ms = 0.5s)
+});
 
 
 
