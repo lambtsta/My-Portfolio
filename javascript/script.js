@@ -6,29 +6,6 @@ menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
 };
-/* */
-document.addEventListener("DOMContentLoaded", function () {
-    let sections = document.querySelectorAll('section');
-    let navLinks = document.querySelectorAll('header nav a');
-
-    window.onscroll = () => {
-        sections.forEach(sec => {
-            let top = window.scrollY;
-            let offset = sec.offsetTop - 150;
-            let height = sec.offsetHeight;
-            let id = sec.getAttribute('id');
-
-            if (top >= offset && top < offset + height) {
-                navLinks.forEach(links => {
-                    links.classList.remove('active');
-                });
-                document.querySelector('header nav a[href="#' + id + '"]').classList.add('active');
-            }
-        });
-        let header = document.querySelector('header');
-        header.classList.toggle('sticky', window.scrollY > 100);
-    };
-});
 
 /*Scroll animation*/
 ScrollReveal({
@@ -95,13 +72,74 @@ document.addEventListener("DOMContentLoaded", function () {
         cursor.style.visibility = (cursor.style.visibility === 'hidden') ? 'visible' : 'hidden';
     }, 1000); // Adjust the blinking speed (500ms = 0.5s)
 });
+// hidding header 
 
 
+// Hide Header on on scroll down
+// JavaScript
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('header').outerHeight();
 
+$(window).scroll(function (event) {
+    didScroll = true;
+});
 
+setInterval(function () {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
 
+function hasScrolled() {
+    var st = $(this).scrollTop();
 
+    // Make sure they scroll more than delta
+    if (Math.abs(lastScrollTop - st) <= delta) return;
 
+    if (st > lastScrollTop && st > navbarHeight) {
+        // Scroll Down
+        if (!$('header').hasClass('header-up')) {
+            $('header').addClass('header-up');
+        }
+    } else {
+        // Scroll Up
+        if (st + $(window).height() < $(document).height()) {
+            if ($('header').hasClass('header-up')) {
+                $('header').removeClass('header-up');
+            }
+        }
+    }
+
+    lastScrollTop = st;
+}
+
+// email.js
+    emailjs.init("P7fMsM4H3PXWtaC0q"); // Replace with your actual user ID
+    document.getElementById("contact-form").addEventListener("submit", function (event) {
+        event.preventDefault(); // Prevent the form from submitting
+
+        // You need to create an email template and get its template ID from the Email.js dashboard.
+        // Replace "your_template_id" with your actual template ID.
+        emailjs.send("service_emta0im", "template_4v2j5rx", {
+            full_name: this.full_name.value,
+            email: this.email.value,
+            contact_number: this.contact_number.value,
+            email_subject: this.email_subject.value,
+            message: this.message.value,
+        }).then(
+            function (response) {
+                console.log("Email sent successfully");
+                // You can add your own success message or redirection here.
+            },
+            function (error) {
+                console.log("Email could not be sent due to an error:", error);
+                // You can add your own error handling here.
+            }
+        );
+    });
 
 
 
