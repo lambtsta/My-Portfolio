@@ -117,29 +117,29 @@ function hasScrolled() {
 }
 
 // email.js
-    emailjs.init("P7fMsM4H3PXWtaC0q"); // Replace with your actual user ID
-    document.getElementById("contact-form").addEventListener("submit", function (event) {
-        event.preventDefault(); // Prevent the form from submitting
+emailjs.init("P7fMsM4H3PXWtaC0q"); 
+document.getElementById("contact-form").addEventListener("submit", function (event) {
+    event.preventDefault(); 
 
-        // You need to create an email template and get its template ID from the Email.js dashboard.
-        // Replace "your_template_id" with your actual template ID.
-        emailjs.send("service_emta0im", "template_4v2j5rx", {
-            full_name: this.full_name.value,
-            email: this.email.value,
-            contact_number: this.contact_number.value,
-            email_subject: this.email_subject.value,
-            message: this.message.value,
-        }).then(
-            function (response) {
-                console.log("Email sent successfully");
-                // You can add your own success message or redirection here.
-            },
-            function (error) {
-                console.log("Email could not be sent due to an error:", error);
-                // You can add your own error handling here.
-            }
-        );
-    });
+    emailjs.send("service_emta0im", "template_4v2j5rx", {
+        full_name: this.full_name.value,
+        email: this.email.value,
+        contact_number: this.contact_number.value,
+        email_subject: this.email_subject.value,
+        message: this.message.value,
+    }).then(
+        function (response) {
+            Swal.fire({
+                icon: 'success',
+                title: 'Message Sent!',
+                text: 'Your message has been sent successfully.',
+            });
+        },
+        function (error) {
+            console.log("Email could not be sent due to an error:", error);
+        }
+    );
+});
 
 
 
