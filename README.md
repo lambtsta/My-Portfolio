@@ -11,7 +11,7 @@ This GitHub repository showcases my web development portfolio, which I've built 
 - **Lloyd Anthony Bautista**
   - GitHub: [lambtsta](https://www.github.com/lambtsta)
   - LinkedIn: [Lloyd Anthony Bautista](https://www.linkedin.com/in/lloyd-anthony-bautista-294240287/)
-  - 
+
 ## Demo
 
 Click the button below to explore the live demo of my portfolio:
