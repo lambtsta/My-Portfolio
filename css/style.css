@@ -1143,6 +1143,13 @@ section{
         font-size: 2rem;
         margin: 3rem 0;
     }
+    .cv-button{
+        width: 5rem;
+        height: 3rem;
+    }
+    .cv-button i{
+        display: none;
+    }
     .home-img>img{
         width: 80vw;
         height: auto;
