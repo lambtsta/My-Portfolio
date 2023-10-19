@@ -1078,7 +1078,7 @@ section{
     margin-bottom: -8rem;
     }
 }
-@media (max-width: 416px) {
+@media (max-width: 430px) {
     #up, #down{
         height: 6vh;
         width: 100px; 
