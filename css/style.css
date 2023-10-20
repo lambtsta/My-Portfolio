@@ -27,7 +27,7 @@ html {
 body{
     /* background: var(--bg-color);*/
     color: var(--text-color);
-    background: linear-gradient(233deg, #10095e 0%, #632372 50%, #bc48ff 100%);
+    background: linear-gradient(10deg, rgb(91, 0, 136), rgb(35, 10, 72));;
     overflow: hidden;
 }
 
