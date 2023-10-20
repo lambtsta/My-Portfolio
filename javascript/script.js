@@ -26,7 +26,7 @@ const type = new Typed('.multiple-entry',{
     backDelay: 1000,
     loop: true
 });
-
+// dowload cv 
 document.addEventListener("DOMContentLoaded", function () {
     const downloadButton = document.getElementById("download-cv");
 
