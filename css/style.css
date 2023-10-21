@@ -445,9 +445,9 @@ section{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 2rem 2rem 2rem 2rem;
+    margin: 1rem 1rem 1rem 1rem;
     border: var(--text-color) solid 1px;
-    width: 35rem;
+    width: 40rem;
 }
 .educ-bg-box i{
     display: flex;
@@ -1011,7 +1011,10 @@ background-color: #00ca4e;
     }
 }
 @media (max-width: 768px){
-    #up, #down{
+    #up, #down, #left, #middle, #right{
+        display: none;
+    }
+    /* #up, #down{
         height: 100px;
         width: 100px; 
         filter: blur(40px);
@@ -1074,7 +1077,7 @@ background-color: #00ca4e;
         70%{
             right: 50px;
         }
-    }
+    } */
    #menu-icon{
     display: block;
    }
@@ -1200,9 +1203,15 @@ background-color: #00ca4e;
     .contact{
     margin-bottom: -8rem;
     }
+    .attr{
+        flex-direction: column;
+    }
 }
 @media (max-width: 430px) {
-    #up, #down{
+    #up, #down, #left, #middle, #right{
+        display: none;
+    }
+    /* #up, #down{
         height: 6vh;
         width: 100px; 
         filter: blur(40px);
@@ -1243,7 +1252,7 @@ background-color: #00ca4e;
         0% {
             transform: rotate(360deg) translate(40px);
         }
-    }
+    } */
     #menu-icon {
         display: block;
     }
@@ -1266,13 +1275,10 @@ background-color: #00ca4e;
         font-size: 2rem;
         margin: 3rem 0;
     }
-    .cv-button{
-        width: 5rem;
-        height: 3rem;
-    }
     .cv-button i{
         font-size: 3rem;
         margin-top: .5rem;
+
     }
     .home-img>img{
         width: 80vw;
