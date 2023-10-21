@@ -1154,14 +1154,14 @@ background-color: #00ca4e;
     font-size: 1.8rem;
    }
    .portfolio-box-img-container{
-    width: 45rem;
+    width: 47rem;
     overflow: hidden;
    }
    .portfolio-container{
     flex-direction: column;
    }
    .portfolio-box-content{
-    width: 47rem;
+    width: 49rem;
    }
    .portfolio-container:nth-child(2){
     flex-direction: column-reverse;
