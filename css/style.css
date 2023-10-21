@@ -426,6 +426,7 @@ section{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    /* border: var(--text-color) solid 1px; */
     
 }
 .educ-bg span{
@@ -438,6 +439,7 @@ section{
     padding: 3rem 2rem 4rem;
     text-align: center;
     border-radius: 1.5rem;
+    
 }
 .educ-bg-box{
     display: flex;
@@ -445,6 +447,7 @@ section{
     align-items: center;
     margin: 2rem 2rem 2rem 2rem;
     border: var(--text-color) solid 1px;
+    width: 35rem;
 }
 .educ-bg-box i{
     display: flex;
@@ -472,8 +475,7 @@ section{
 }
 .grad-wrapper-content{
     padding: 1rem;
-    width: 39rem;
-   
+    /* width: 30rem; */
 }
 
 .grad-wrapper-content h3{
@@ -731,7 +733,7 @@ background-color: #00ca4e;
 
 /* contacts sections styles */
 .contact{
-    min-height: 100vh;
+    min-height: 130vh;
 }
 .contact h2{
     margin-bottom: 3rem;
