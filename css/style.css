@@ -25,7 +25,6 @@ html {
     scroll-behavior: smooth;
 }
 body{
-    /* background: var(--bg-color);*/
     color: var(--text-color);
     background: linear-gradient(10deg, rgb(91, 0, 136), rgb(35, 10, 72));;
     overflow: hidden;
@@ -51,8 +50,6 @@ body{
     position: absolute;
     width: 100%;
     height: 100%;
-    /* background-color: var(--accent-color);
-    color: var(--bg-color); */
 }
 .loader-text {
     font-size: 9rem;
@@ -65,7 +62,6 @@ body{
 }
 
 section{
-    /* min-height: 100vh; */
     padding: 10rem 9% 2rem;
 }
 #up {
@@ -174,7 +170,7 @@ section{
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    transition: all 0.3s ease; /* Add smooth transition */
+    transition: all 0.3s ease;
 }
 
 .header-up {
@@ -426,6 +422,45 @@ section{
 }
 
 /* services section styles */
+.card {
+width: 40rem;
+height: 35rem;
+margin: 0 auto;
+background-color: #F8FBFE;
+color: var(--accent-color);
+border-radius: 8px;
+z-index: 1;
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.tools {
+display: flex;
+align-items: center;
+padding: 9px;
+}
+.circle {
+padding: 0 4px;
+}
+.box {
+display: inline-block;
+align-items: center;
+width: 10px;
+height: 10px;
+padding: 1px;
+border-radius: 50%;
+}
+.red {
+background-color: #ff605c;
+}
+.yellow {
+background-color: #ffbd44;
+}
+.green {
+background-color: #00ca4e;
+}
+
+/* services section styles */
 .services{
     min-height: 100vh;
 }
@@ -444,15 +479,14 @@ section{
     flex-wrap: wrap;
     gap: 2rem;
 }
-.services-container .services-box{
-    flex: 1 1 30rem;
-    background: var(--bg-color);
-    color: var(--accent-color);
-    padding: 3rem 2rem 4rem;
+.services-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     text-align: center;
-    border-radius: 1.5rem;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    transition: .5s ease;
+    padding: .5rem;
+    margin: 0 1rem 1rem 1rem;
 }
 .services-container .services-box:hover{
     transform: scale(1.02);
@@ -475,13 +509,6 @@ section{
     width: 3rem;
     height: 3rem;
     margin: .5rem;
-}
-.attr-link{
-    font-size: 1rem;
-    text-align: right;
-    margin-top: 1rem;
-    color: var(--accent-color); 
-    text-decoration: none; 
 }
 .attr-link:hover{
     color: var(--accent-color1); 
