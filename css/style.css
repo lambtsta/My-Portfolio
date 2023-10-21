@@ -65,90 +65,98 @@ section{
     padding: 10rem 9% 2rem;
 }
 #up {
+    max-width: 150px;
+    max-height: 300px;
     position: absolute;
-    left: 50%;
+    left: 40%;
     height: 150px;
-    width: 150px;
+    width: 300px;
     border-radius: 50%;
-    filter: blur(80px);
-    background-image: radial-gradient(circle, #e49841 0%, #e43c9e 50%, #d92b39 100%);
+    filter: blur(60px);
+    background-image: radial-gradient(circle, #e9c9a4 0%, #e43c9e 50%, #d92b39 100%);
     animation: rotateAnimation 10s infinite; 
 }
 #down {
     position: absolute;
+    max-width: 300px;
+    max-height: 300px;
     bottom: 0;
     right: 50%;
-    height: 100px;
-    width: 100px;
+    height: 280px;
+    width: 280px;
     border-radius: 50%;
-    filter: blur(80px);
-    background-image: radial-gradient(circle, #eddcce 0%, #e83c3c 100%);
-    animation: rotateDown 18s infinite;
+    filter: blur(60px);
+    background-image: radial-gradient(circle, #d0a786 0%, #e83c3c 100%);
+    animation: rotateDown 8s infinite;
 }
 #middle{
     position: absolute;
     top: 40%;
     left: 40%;
-    height: 300px;
+    height: 350px;
     width: 200px;
     border-radius: 50%;
     filter: blur(70px);
-    background-image: radial-gradient(circle, #7cc5a1 0%, #eeea78 100%);;
+    background-image: radial-gradient(circle, #a3ffd1 0%, #fffa5e 100%);;
     animation: rotateMiddle 4s infinite;
 }
 #left {
+    max-width: 300px;
+    max-height: 300px;
     position: absolute;
-    top: 10%;
+    top: 17%;
     left: 0;
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
     border-radius: 50%;
-    filter: blur(85px);
-    background-image: radial-gradient(circle, #bd89c3 0%, #e744f2 50%, #8847ff 100%);
-    animation: left 6s .5s infinite;
+    filter: blur(60px);
+    background-image: radial-gradient(circle, #e55ff4 0%, #e744f2 50%, #8847ff 100%);
+    animation: left 6s  infinite;
 }
 
 #right {
+    max-width: 300px;
+    max-height: 250px;
     position: absolute;
-    top: 50%;
+    top: 47%;
     right: 10%;
-    height: 150px;
-    width: 150px;
+    /* height: 300px;
+    width: 100px; */
     border-radius: 50%;
     filter: blur(65px);
-    background-image: radial-gradient(circle, #2de4b3 0%, #3cb2e8 100%);
-    animation: right 10s 2s infinite;
+    background-image: radial-gradient(circle, #7bf7d6 0%, #3cb2e8 100%);
+    animation: right 6s 1s infinite;
 }
 @keyframes rotateMiddle {
     0% {
-        transform: rotate(0deg) translate(60px);
+        transform: rotate(0deg) translate(80px);
     }
     100% {
-        transform: rotate(360deg) translate(60px);
+        transform: rotate(360deg) translate(80px);
     }
 }
 @keyframes rotateAnimation {
     0% {
-        transform: rotate(0deg) translate(120px);
+        transform: rotate(0deg) translate(100px);
     }
     100% {
-        transform: rotate(360deg) translate(120px);
+        transform: rotate(360deg) translate(100px);
     }
 }
 @keyframes rotateDown {
     100% {
-        transform: rotate(0deg) translate(80px);
+        transform: rotate(0deg) translate(100px);
     }
     0% {
-        transform: rotate(360deg) translate(80px);
+        transform: rotate(360deg) translate(100px);
     }
 }
 @keyframes left {
     0%,100%{
-        left: -100px;
+        left: -300px;
     }
     70%{
-        left: 700px; 
+        left: 800px; 
     }
 }
 @keyframes right {
@@ -214,13 +222,13 @@ section{
     width: 100%;
 }
 .cv-button{
-    border: var(--button-color) solid 2px;
-    width: 9rem;
-    height: 3.5rem;
+    border: var(--button-color) solid 1.5px;
+    width: 9.8rem;
+    height: 3.9rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     cursor: pointer;
 }
 .cv-button i{
@@ -263,8 +271,8 @@ section{
 }
 .home-content h1{
     font-family: 'EB Garamond', serif;
-    font-size: 5.8rem;
-    font-weight: 700;
+    font-size: 6rem;
+    font-weight: 800;
     line-height: 1.3;
     color: var(--text-color);
     /* text-shadow: 0 0 2rem var(--button-color); */
@@ -301,11 +309,11 @@ section{
     box-shadow: 0 0 1rem var(--text-color);
 }
 .read-more-btn{
-    border: var(--button-color) solid 2px;
+    border: var(--button-color) solid 1.5px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 10rem;
+    width: 11.5rem;
     height: 4rem;
 }
 .read-more-btn a{
@@ -722,7 +730,7 @@ background-color: #00ca4e;
     align-items: center;
     padding: 1rem;
     background: var(--button-color);
-    border-radius: .8rem;
+    border-radius: 10rem;
     animation: floatImage 4s ease-in-out infinite;
 }
 .footer-icon-top a i{
