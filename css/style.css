@@ -18,6 +18,7 @@
     --accent-color: #181717;
     --accent-color1: #2e26c1;
     --button-color: #64CCC5;
+    --scroll-bar: #555;
 }
 html {
     font-size: 62.5%;
@@ -29,7 +30,26 @@ body{
     background: linear-gradient(10deg, rgb(55, 29, 63), rgb(30, 15, 54));
     overflow: hidden;
 }
-
+::-webkit-scrollbar {
+    width: 4px;
+    height: 2px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: linear-gradient(10deg, rgb(55, 29, 63), rgb(30, 15, 54));
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--scroll-bar);
+    border-radius: 6px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--scroll-bar);
+  }
 .loader {
     position: fixed;
     top: 0;
@@ -224,24 +244,24 @@ section{
 
 .cv-button{
     position: relative;
-    width: 5.2rem;
-    height: 3.2rem;
+    /* width: 5.2rem;
+    height: 3.2rem; */
     border-radius: .2rem;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
     cursor: pointer;
-    border:var(--button-color) solid 1.5px;
+    /* border:var(--button-color) solid 1.5px; */
 }
 .cv-button::before{
     content: attr(data-hover);
     visibility: hidden;
     opacity: 0;
-    font-size: 1rem;
+    font-size: 1.2rem;
     border-radius: .2rem;
-    width: 6rem;
-    height: 1.5rem;
+    width: 7rem;
+    height: 1.9rem;
     border: var(--button-color) solid 1.5px;
     color: var(--text-color);
     text-align: center;
@@ -257,7 +277,11 @@ section{
 }
 .cv-button i{
     color:var(--text-color) ;
-    font-size: 1.8rem;
+    font-size: 2.7rem;
+    font-weight: 500;
+}
+.cv-button i:hover{
+    color: var(--button-color);
 }
 .cv-dl{
     font-weight: 500;
@@ -338,8 +362,7 @@ section{
     width: 13rem;
     height: 4.5rem;
     font-size: 1.2rem;
-}
-.read-more-btn a{
+    border-radius: .2rem;
     color: var(--text-color);
 }
 
@@ -792,7 +815,7 @@ background-color: #00ca4e;
 }
 .footer-icon-top a i{
     font-size: 2.5rem;
-    color: var(--text-color);
+    color: var(--accent-color);
     background: transparent;
     
 }
@@ -1240,10 +1263,8 @@ background-color: #00ca4e;
         height: 3rem;
     }
     .cv-button i{
-        font-size: 1.5rem;
+        font-size: 3rem;
         margin-top: .5rem;
-    }.cv-button::before{
-        display: none;
     }
     .home-img>img{
         width: 80vw;
