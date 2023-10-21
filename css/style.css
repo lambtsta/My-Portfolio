@@ -26,7 +26,7 @@ html {
 }
 body{
     color: var(--text-color);
-    background: linear-gradient(10deg, rgb(91, 0, 136), rgb(35, 10, 72));;
+    background: linear-gradient(10deg, rgb(55, 29, 63), rgb(30, 15, 54));
     overflow: hidden;
 }
 
@@ -313,8 +313,9 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 11.5rem;
-    height: 4rem;
+    width: 13rem;
+    height: 4.5rem;
+    font-size: 1.2rem;
 }
 .read-more-btn a{
     color: var(--text-color);
