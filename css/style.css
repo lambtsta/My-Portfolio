@@ -472,6 +472,7 @@ section{
 }
 .grad-wrapper-content{
     padding: 1rem;
+    width: 39rem;
    
 }
 
@@ -1152,13 +1153,15 @@ background-color: #00ca4e;
    .portfolio-box-content h3{
     font-size: 1.8rem;
    }
-   .portfolio-box-img>img{
-    width: 82vw;
-    height: auto;
+   .portfolio-box-img-container{
+    width: 60rem;
+    overflow: hidden;
    }
    .portfolio-container{
     flex-direction: column;
-    padding: 1rem;
+   }
+   .portfolio-box-content{
+    width: 62rem;
    }
    .portfolio-container:nth-child(2){
     flex-direction: column-reverse;
@@ -1302,8 +1305,17 @@ background-color: #00ca4e;
     .portfolio-container{
         padding: 1rem;
     }
-    .portfolio-box-img>img{
+    .portfolio-box-img-container{
+        width: 35rem;
+        overflow: hidden;
+    }
+    .portfolio-box-img{
         margin-bottom: 4rem;
+        max-width: 30rem;
+    }
+    .portfolio-box-content{
+        padding: 1rem;
+        width: 30rem;
     }
     .portfolio-app-container{
         display: inline-flex;
