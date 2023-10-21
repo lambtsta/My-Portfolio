@@ -11,9 +11,10 @@ menuIcon.onclick = () => {
 ScrollReveal({
     distance: '80px',
     duration: 1800,
-    delay: 100
+    delay: 100,
+    reset: true
 });
-ScrollReveal().reveal('.home-content, .about-img' , { origin: 'left' });
+ScrollReveal().reveal('.home-content, .about-img, .portfolio-box-content' , { origin: 'left' });
 ScrollReveal().reveal('.home-img, .portfolio-box-img' , { origin: 'right' });
 ScrollReveal().reveal('.heading', { origin: 'top' });
 ScrollReveal().reveal('.about-content, .services-container, .portfolio-container, .contact form, .educ-bg-box', { origin: 'bottom' });
