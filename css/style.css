@@ -1068,7 +1068,7 @@ background-color: #00ca4e;
         padding: 1rem;
     }
     .portfolio-box-img-container{
-        width: 35rem;
+        width: 48rem;
         overflow: hidden;
     }
     .portfolio-box-img{
@@ -1077,14 +1077,14 @@ background-color: #00ca4e;
     }
     .portfolio-box-content{
         padding: 1rem;
-        width: 30rem;
+        width: 48rem;
     }
     .portfolio-app-container{
         display: inline-flex;
         justify-content: center;
         align-items: center;
         height: 2.5rem;
-        width: 30rem;
+        width: 28rem;
         margin-top: 1rem;
     }
     .portfolio-app-container :nth-child(2){
@@ -1097,7 +1097,12 @@ background-color: #00ca4e;
     .app-php span, .app-html span, .app-css span, .app-js span, .app-jquery span, .app-postgre span, .app-react span,.app-django span, .app-mysql span{
         display: none;
     }
-    
+    .contact-paragraph{
+        width: 50rem;
+    }
+    .contact form .input-box{
+        max-width: 50rem;
+    }
 }
 
 
