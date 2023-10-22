@@ -986,6 +986,12 @@ background-color: #00ca4e;
     .attr{
         flex-direction: column;
     }
+    .contact-paragraph{
+        width: 40rem;
+    }
+    .contact form .input-box{
+        max-width: 50rem;
+    }
 }
 @media (max-width: 430px) {
     .g1{
