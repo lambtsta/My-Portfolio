@@ -972,7 +972,7 @@ background-color: #00ca4e;
         display: none;
     }
    .contact form .input-box input{
-    width: 100%;
+    width: 50rem;
     font-size: 1.3rem;
     color: var(--accent-color);
     }
