@@ -1014,70 +1014,6 @@ background-color: #00ca4e;
     #up, #down, #left, #middle, #right{
         display: none;
     }
-    /* #up, #down{
-        height: 100px;
-        width: 100px; 
-        filter: blur(40px);
-    }
-    #up{
-        top: 15%;
-        left: 40%;
-    }
-    #down{
-        top:30%;
-    }
-    #right{
-        top: 20%;
-        left: 30%;
-    }
-    #middle{
-        top: 30%;
-    }
-    #left, #right, #middle{
-        height: 100px;
-        width: 100px;  
-        filter: blur(40px);
-    }
-    @keyframes rotateMiddle {
-        0% {
-            transform: rotate(0deg) translate(60px);
-        }
-        100% {
-            transform: rotate(360deg) translate(60px);
-        }
-    }
-    @keyframes rotateAnimation {
-        0% {
-            transform: rotate(0deg) translate(60px);
-        }
-        100% {
-            transform: rotate(360deg) translate(60px);
-        }
-    }
-    @keyframes rotateDown {
-        100% {
-            transform: rotate(0deg) translate(80px);
-        }
-        0% {
-            transform: rotate(360deg) translate(80px);
-        }
-    }
-    @keyframes left {
-         0%, 100%{
-            left: -30px;
-         }
-         75%{
-            left: 80px;
-         }
-    }
-    @keyframes right {
-        0%, 100%{
-            right: -25px;
-        }
-        70%{
-            right: 50px;
-        }
-    } */
    #menu-icon{
     display: block;
    }
@@ -1211,48 +1147,6 @@ background-color: #00ca4e;
     #up, #down, #left, #middle, #right{
         display: none;
     }
-    /* #up, #down{
-        height: 6vh;
-        width: 100px; 
-        filter: blur(40px);
-    }
-    #down{
-        left: 5%;
-        top: 20%;
-    }
-    #right{
-        left: 20%;
-        top: 30%;
-    }
-    #left, #right, #middle{
-        filter: blur(40px);
-        height: 100px;
-        width: 100px;   
-    }
-    @keyframes rotateMiddle {
-        0% {
-            transform: rotate(0deg) translate(30px);
-        }
-        100% {
-            transform: rotate(360deg) translate(30px);
-        }
-    }
-    @keyframes rotateAnimation {
-        0% {
-            transform: rotate(0deg) translate(60px);
-        }
-        100% {
-            transform: rotate(360deg) translate(60px);
-        }
-    }
-    @keyframes rotateDown {
-        100% {
-            transform: rotate(0deg) translate(40px);
-        }
-        0% {
-            transform: rotate(360deg) translate(40px);
-        }
-    } */
     #menu-icon {
         display: block;
     }
