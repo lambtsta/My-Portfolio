@@ -15,7 +15,7 @@
 :root{
     --bg-color: #FDF6F0;
     --text-color: #FDF6F0;
-    --accent-color: #242222;
+    --accent-color: #171617;
     --accent-color1: #32674e;
     --button-color: #95bbb8;
     --scroll-bar: #9e9696;
@@ -25,39 +25,45 @@ html {
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
- .g1{
+.g1{
      position: absolute;
-     width: 300px;
-     height: 300px;
+     width: 350px;
+     height: 350px;
      border-radius: 50%;
-     filter: blur(50px);
-     top: 7rem;
-     left: -1rem;
-     mix-blend-mode:multiply;
-     background: linear-gradient(280deg, #a149c1 0%, #ffbd47 100%);
- }
- .g2{
+     filter: blur(79px);
+     top: 0;
+     left: 0;
+     /* mix-blend-mode:multiply; */
+     background: #c100b4;
+     background: -webkit-linear-gradient(321deg, #c100b4 0%, #ff625d 50%, #ffa36a 100%);
+     background: linear-gradient(321deg, #ff00ee 0%, #ff5454 50%, #ffa36a 100%);
+}
+.g2{
      position: absolute;
      width: 280px;
      height: 280px;
      border-radius: 50%;
      filter: blur(70px);
-     right: 8%;
+     right: 2%;
      top:55%;
-     mix-blend-mode:multiply;
-     background: linear-gradient(119deg, #ce47ff 0%, #ffbb45 100%);
- }
- .g3{
+     /* mix-blend-mode:multiply; */
+     background: #c100b4;
+     background: -webkit-linear-gradient(321deg, #c100b4 0%, #ff625d 50%, #ffa36a 100%);
+     background: linear-gradient(321deg, #ff00ee 0%, #ff6868 50%, #ffa36a 100%);
+}
+.g3{
     position: absolute;
-     width: 250px;
-     height: 250px;
+     width: 300px;
+     height: 300px;
      border-radius: 50%;
-     filter: blur(70px);
+     filter: blur(80px);
      left: 0;
      top: 115%;
-     mix-blend-mode:multiply;
-     background: linear-gradient(315deg, #8b55d2 0%, #fba660 100%);
- }
+     /* mix-blend-mode:multiply; */
+     background: #c100b4;
+     background: -webkit-linear-gradient(321deg, #c100b4 0%, #ff625d 50%, #ffa36a 100%);
+     background: linear-gradient(321deg, #ff59f4 0%, #ff5454 50%, #ffa36a 100%);
+}
 body{
     color: var(--accent-color);
     background-color: #c8dfda;
@@ -135,6 +141,7 @@ section{
     cursor: default;
 }
 .logo img{
+    margin-top: -.8rem;
     width: 4rem;
     height: auto;
 }
@@ -253,7 +260,7 @@ section{
      
 }
 .home-content p{
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: 400;
     color: var(--accent-color);
 
@@ -307,19 +314,19 @@ section{
 }
 .overlay-text {
     position: absolute;
-    bottom: 1rem; 
     left: 50%;
     transform: translateX(-50%);
     text-align: center; 
     background-color: var(--bg-color);
     color: var(--accent-color);
     padding: 0.5rem 1rem;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-family: 'Special Elite', cursive;
     width: 100%; 
 }
 .about-img > img{
     width: 90vw;
+    margin-bottom: 1rem;
     max-width: 100%;
     height: auto;
 }
