@@ -79,10 +79,9 @@ body{
 }
 ::-webkit-scrollbar-thumb {
     background: linear-gradient(10deg, rgb(123, 119, 124), rgb(66, 63, 71));
-    border-radius: 6px;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--scroll-bar);
+    background: linear-gradient(10deg, rgb(123, 119, 124), rgb(66, 63, 71));
 }
 .loader {
     position: fixed;
