@@ -974,6 +974,7 @@ background-color: #00ca4e;
    .contact form .input-box input{
     width: 50rem;
     font-size: 1.3rem;
+    margin-left: 1rem;
     color: var(--accent-color);
     }
     .contact form textarea{
