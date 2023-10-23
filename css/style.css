@@ -978,7 +978,7 @@ background-color: #00ca4e;
     color: var(--accent-color);
     }
     .contact form textarea{
-    max-width: 50rem;
+    max-width: 48rem;
     font-size: 1.3rem;
     color: var(--accent-color);
     }
