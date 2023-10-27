@@ -972,18 +972,22 @@ background-color: #00ca4e;
     width: 30rem;
     }
     .app-php, .app-html, .app-css, .app-js, .app-jquery, .app-postgre, .app-mysql, .app-react, .app-django{
-        border: transparent;
+    border: transparent;
     }
     .app-php span, .app-html span, .app-css span, .app-js span, .app-jquery span, .app-postgre span, .app-react span,.app-django span, .app-mysql span{
-        display: none;
+    display: none;
     }
    .contact form .input-box input{
     width: 50rem;
     font-size: 1.3rem;
     color: var(--accent-color);
     }
+    .contact form .input-box{
+    width: 50rem;
+    margin: 0 0 0 2.6rem;
+    }
     .contact form textarea{
-    width: 49rem;
+    width: 50rem;
     font-size: 1.3rem;
     color: var(--accent-color);
     }
@@ -991,10 +995,10 @@ background-color: #00ca4e;
     margin-bottom: -8rem;
     }
     .attr{
-        flex-direction: column;
+    flex-direction: column;
     }
     .contact-paragraph{
-        width: 50rem;
+    width: 50rem;
     }
 }
 @media (max-width: 500px){
