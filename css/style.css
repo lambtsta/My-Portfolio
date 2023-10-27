@@ -949,7 +949,7 @@ background-color: #00ca4e;
    }
    .portfolio-box-img-container{
     width: 47rem;
-    overflow: hidden;
+    overflow: scroll;
    }
    .portfolio-container{
     flex-direction: column;
