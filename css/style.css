@@ -978,7 +978,7 @@ background-color: #00ca4e;
         display: none;
     }
    .contact form .input-box input{
-    width:100%;
+    width: 50rem;
     font-size: 1.3rem;
     color: var(--accent-color);
     }
@@ -995,9 +995,6 @@ background-color: #00ca4e;
     }
     .contact-paragraph{
         width: 50rem;
-    }
-    .contact form .input-box{
-        max-width: 50rem;
     }
 }
 @media (max-width: 500px){
