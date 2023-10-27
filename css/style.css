@@ -978,7 +978,6 @@ background-color: #00ca4e;
     display: none;
     }
     .contact form{
-    border: #00ca4e solid 1px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1008,8 +1007,17 @@ background-color: #00ca4e;
     }
 }
 @media (max-width: 500px){
-    .g1, .g2, .g3{
+    /* .g1, .g2, .g3{
         display: none;
+    } */
+    .contact-paragraph{
+        width: 50rem;
+    }
+    .contact form .input-box{
+        max-width: 45rem;
+    }
+    .contact form textarea{
+        width: 45rem;
     }
 }
 @media (max-width: 430px) {
