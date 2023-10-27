@@ -977,6 +977,13 @@ background-color: #00ca4e;
     .app-php span, .app-html span, .app-css span, .app-js span, .app-jquery span, .app-postgre span, .app-react span,.app-django span, .app-mysql span{
     display: none;
     }
+    .contact form{
+        border: #00ca4e solid 1px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
    .contact form .input-box input{
     width: 50rem;
     font-size: 1.3rem;
@@ -984,7 +991,8 @@ background-color: #00ca4e;
     }
     .contact form .input-box{
     width: 50rem;
-    margin: 0 0 0 2.6rem;
+    border: #00ca4e solid 1px;
+    /* margin: 0 0 0 2.6rem; */
     }
     .contact form textarea{
     width: 50rem;
