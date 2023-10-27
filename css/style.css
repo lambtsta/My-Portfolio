@@ -978,11 +978,11 @@ background-color: #00ca4e;
     display: none;
     }
     .contact form{
-        border: #00ca4e solid 1px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+    border: #00ca4e solid 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     }
    .contact form .input-box input{
     width: 50rem;
@@ -991,8 +991,6 @@ background-color: #00ca4e;
     }
     .contact form .input-box{
     width: 50rem;
-    border: #00ca4e solid 1px;
-    /* margin: 0 0 0 2.6rem; */
     }
     .contact form textarea{
     width: 50rem;
