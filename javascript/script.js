@@ -21,7 +21,7 @@ ScrollReveal().reveal('.about-content, .services-container, .portfolio-container
 
 /*type js*/
 const type = new Typed('.multiple-entry',{
-    strings: ['Web Developer'],
+    strings: ['Web Developer','Data Analyst'],
     typeSpeed:100,
     backspeed: 100,
     backDelay: 1000,
