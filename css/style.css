@@ -31,7 +31,7 @@ html {
      height: 350px;
      border-radius: 50%;
      filter: blur(79px);
-     top: 0;
+     top: 10rem;
      left: 0;
      /* mix-blend-mode:multiply; */
      background: #c100b4;
@@ -128,6 +128,10 @@ section{
     align-items: center;
     z-index: 100;
     transition: all 0.3s ease;
+    background: rgba(200,223,218,0.05);
+-webkit-backdrop-filter: blur(13px);
+backdrop-filter: blur(13px);
+border: 1px solid rgba(200,223,218,0.025);
 }
 
 .header-up {
