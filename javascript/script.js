@@ -21,7 +21,7 @@ ScrollReveal().reveal('.about-content, .services-container, .portfolio-container
 
 /*type js*/
 const type = new Typed('.multiple-entry',{
-    strings: ['Web Developer','Data Analyst'],
+    strings: ['Web Developer'],
     typeSpeed:100,
     backspeed: 100,
     backDelay: 1000,
@@ -54,9 +54,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const loader = document.querySelector(".loader");
     const type = new Typed('#typing', {
         strings: ['lamb.'],
-        typeSpeed: 100,
+        typeSpeed: 50,
         backSpeed: 100,
-        backDelay: 1000,
+        backDelay: 900,
         onComplete: function () {
            
             setTimeout(() => {
