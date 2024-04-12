@@ -83,7 +83,7 @@ body{
 ::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(10deg, rgb(123, 119, 124), rgb(66, 63, 71));
 }
-.loader {
+/* .loader {
     position: fixed;
     top: 0;
     left: 0;
@@ -97,7 +97,7 @@ body{
     z-index: 9999;
     opacity: 1;
     transition: opacity 0.3s ease-in-out;
-}
+} */
 
 .loader-background {
     position: absolute;
