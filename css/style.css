@@ -288,7 +288,7 @@ section{
     box-shadow: 0 0 1rem var(--text-color);
 }
 .read-more-btn{
-    border: var(--accent-color) solid 1px;
+    border: var(--accent-color) solid .2rem;
     display: flex;
     justify-content: center;
     align-items: center;
